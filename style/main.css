@@ -3,6 +3,16 @@ html{
 	font-family: 'Exo 2',Helvetica,Arial,Tahoma,Verdana,sans-serif;
 }
 
+.logo-icon{
+	width: 20px;
+    height: 20px;
+    margin: 0 10px 0 20px;
+}
+
+.navbar-brand-text{
+	vertical-align: text-top;
+}
+
 #about {
     min-height: 65rem;
     background-image: url(../img/rawpixel-594848-unsplash.jpg);

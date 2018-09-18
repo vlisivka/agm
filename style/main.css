@@ -130,6 +130,275 @@ section{
     }
 }
 
+/* CARD SECTIONS */
+.sections-single-title{
+	background-color: white;
+	-moz-box-shadow: inset #c1c7d0 8px 0 20px 10px, #c1c7d0 -8px 0 20px 10px;
+	-webkit-box-shadow: inset #c1c7d0 8px 0 20px 10px, #c1c7d0 -8px 0 20px 10px;
+	box-shadow: #c1c7d0 8px 0 20px 10px, #c1c7d0 -8px 0 20px 10px;
+	padding: 15px;
+	font-size: 4rem;
+}
+
+.big-card-container{
+	/* max-width: 85rem; */
+	transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear; /* Firefox 4 */
+    -webkit-transition: all 0.2s linear; /* Safari and Chrome */
+    -o-transition: all 0.2s linear; /* Opera */
+    -ms-transition: all 0.2s linear; /* Explorer 10 */
+}
+
+
+/* #containerEx2 {
+	clear: both;
+	width: 300px;
+	margin: 0 auto;
+	min-height: 600px;
+}
+
+.big-card-container .big-card-section{
+    height: 100px;
+    width: 300px;
+    margin: 15px 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.big-card-container .big-card-section:hover {
+	height: 133px;
+	width: 400px;
+	margin-left: -50px;
+	
+} */
+
+.big-card-section{
+	padding: 5rem;
+	background-color: white;
+	-moz-box-shadow: inset #c1c7d0 0 5px 20px;
+	-webkit-box-shadow: inset #c1c7d0 0 5px 20px;
+	box-shadow: #c1c7d0 0 5px 20px;
+	/* border-radius: 2rem; */
+	transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear; /* Firefox 4 */
+    -webkit-transition: all 0.2s linear; /* Safari and Chrome */
+    -o-transition: all 0.2s linear; /* Opera */
+    -ms-transition: all 0.2s linear; /* Explorer 10 */
+}
+
+/* .big-card-section:hover{
+		background-color: whitesmoke; 
+	-moz-box-shadow: inset #c1c7d0 0 0 20px;
+	-webkit-box-shadow: inset #c1c7d0 0 0 20px;
+	box-shadow: inset #c1c7d0 0 0 20px;
+} */
+
+.big-card-section > *{
+	padding: 3rem;
+}
+
+.big-card-image{
+	/* background-image: url(../img/rawpixel-594848-unsplash.jpg); */
+    height: 35rem;
+    background-size: cover;
+    background-position: center;
+}
+#bg-crd-sec-0{
+margin-left: 0px;
+margin-right: 0px;
+}
+#bg-crd-sec-0 .big-card-image{
+	background-image: url(../img/rawpixel-567016-unsplash.jpg);
+}
+#bg-crd-sec-1 .big-card-image{
+	background-image: url(../img/whereslugo-401104-unsplash.jpg);
+}
+#bg-crd-sec-2 .big-card-image{
+	background-image: url(../img/christa-dodoo-485704-unsplash.jpg);
+}
+#bg-crd-sec-3 .big-card-image{
+	background-image: url(../img/andrew-butler-325931-unsplash.jpg);
+}
+
+.big-card-text{
+
+}
+
+.big-card-text-title{
+	padding: 2rem 0;
+	font-size: 3.5rem;
+}
+
+.big-card-text-main{
+	font-size: 2rem;
+}
+#bg-crd-sec-0 .big-card-text-main {
+    font-size: 2.8rem;
+}
+
+
+
+.mid-card-container{
+
+}
+
+.mid-card-section{
+	/* margin: 0 5px; */
+	/* padding: 20px; */
+	overflow: auto;
+	margin-bottom: 20px;
+	display: -ms-flexbox;
+    display: flex;
+    height: 350px;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#md-crd-sec-1{
+	background-color: darkslategray;
+}
+
+#md-crd-sec-2{
+	background-color: darkgoldenrod;
+}
+
+#md-crd-sec-3{
+	background-color: salmon;
+}
+
+.mid-card-image{
+    height: 150px;
+	background-position: center center;
+	margin: 10px;
+}
+
+#md-crd-sec-1 .mid-card-image{
+	background-image: url(../img/rawpixel-594848-unsplash.jpg);
+}
+
+#md-crd-sec-2 .mid-card-image{
+	background-image: url(../img/rawpixel-594848-unsplash.jpg);
+}
+
+#md-crd-sec-3 .mid-card-image{
+	background-image: url(../img/rawpixel-594848-unsplash.jpg);
+}
+
+.mid-card-text{
+	padding: 20px;
+	color: white;
+}
+
+.mid-card-text-title{
+	padding-bottom: 2rem;
+	font-size: 4rem;
+}
+
+.mid-card-text-main{
+	font-size: 1.8rem;
+}
+
+.small-card-container{
+
+}
+
+.small-card-section{
+	-moz-box-shadow: #c1c7d0 0 5px 20px;
+	-webkit-box-shadow: #c1c7d0 0 5px 20px;
+	box-shadow: #c1c7d0 0 5px 20px;
+	/* -moz-box-shadow: inset #c1c7d0 0 0 20px;
+	-webkit-box-shadow: inset #c1c7d0 0 0 20px;
+	box-shadow: inset #c1c7d0 0 0 20px; */
+	margin-bottom: 15px;
+	padding: 40px 20px 20px 20px;
+	min-height: 315px;
+}
+
+.small-card-image{
+	height: 80px;
+	width: 80px;
+	margin: 0 auto;
+	background-position: center center;
+	border-radius: 50%;
+}
+
+/* #sm-crd-sec-1 .small-card-image{
+	background-image: url(../img/rawpixel-594848-unsplash.jpg);
+}
+
+#sm-crd-sec-2 .small-card-image{
+	background-image: url(../img/rawpixel-594848-unsplash.jpg);
+}
+
+#sm-crd-sec-3 .small-card-image{
+	background-image: url(../img/rawpixel-594848-unsplash.jpg);
+} */
+
+/* #sm-crd-sec-4 .small-card-image{
+	background-image: url(../img/rawpixel-594848-unsplash.jpg);
+} */
+
+.small-card-text{
+	padding-top: 20px;
+}
+
+.small-card-text-title{
+	padding-bottom: 2rem;
+	font-size: 3rem;
+}
+
+.small-card-text-main{
+	font-size: 1.8rem;
+}
+
+
+@media (max-width: 991px) {
+	.big-card-text-title{
+		font-size: 4rem;
+	}
+	.big-card-text-main{
+		font-size: 2.8rem;
+	}
+	.mid-card-text-title{
+		font-size: 3.8rem;
+	}
+	.mid-card-text-main{
+		font-size: 2.6rem;
+	}
+	.small-card-text-title{
+		font-size: 3.6rem;
+	}
+	.small-card-text-main{
+		font-size: 2.4rem;
+	}
+	.small-card-section{
+		min-height: 270px;
+	}
+}
+
+@media (max-width: 767px) {
+	.sections-single-title{
+		margin: 0 15px;
+	}
+	.big-card-section > *{
+		padding: 2rem;
+	}
+	.small-card-section{
+		min-height: auto;
+	}
+	#bg-crd-sec-0 .big-card-text-main, .big-card-text-main{
+		font-size: 2.4rem;
+	}
+	.big-card-text-title {
+		font-size: 3.5rem;
+	}
+}
+
+
+
+
+
 
 /* STYLING FOR HALF IMAGE HALF TEXT SECTION  */
     .banner-background {

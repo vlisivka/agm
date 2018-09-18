@@ -248,9 +248,9 @@ margin-right: 0px;
 	/* padding: 20px; */
 	overflow: auto;
 	margin-bottom: 20px;
+	min-height: 350px;
 	display: -ms-flexbox;
     display: flex;
-    height: 350px;
     -ms-flex-align: center;
     align-items: center;
 }
@@ -392,6 +392,9 @@ margin-right: 0px;
 	}
 	.big-card-text-title {
 		font-size: 3.5rem;
+	}
+	.mid-card-section{
+		min-height: 350px;
 	}
 }
 

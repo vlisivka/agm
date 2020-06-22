@@ -1,394 +1,176 @@
-<!doctype html>
-<html lang="uk">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk" xml:lang="uk">
 <head>
-  <title>Agreemeeting - Платформа Управління Контрактами</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8" />
   <link rel="shortcut icon" sizes="192x192" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Exo+2:400,600|Oswald:300,400&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="index.min.css">
   <script src="scroll.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Agreemeeting</title>
+  <style type="text/css">
+      html{font-family: 'Exo 2',Helvetica,Arial,Tahoma,Verdana,sans-serif; text-shadow: rgba(0,0,0,.01) 0 0 10px;}
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="style/sakura.css" />
+  <link rel="stylesheet" href="style/main.css" />
   <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="wrapper">
-    <section class="landing-section" id="main-section">
-      <header id="header">
-        <div class="row">
-          <div class="column header">
-            <div class="logo">
-              <svg class="logo-icon">
-                <use xlink:href="/images/sprite.svg#logo"></use>
-              </svg>
-              <span>Agreemeeting</span>
-            </div>
-            <div class="header-menu-button" id="menu-button">
-              <svg>
-                <use xlink:href="/images/sprite.svg#menu"></use>
-              </svg>
-            </div>
-            <nav class="navigation" id="menu">
-              <div class="navigation-item" onclick="new Scroll(document.body).toElement(document.getElementById('poster-1'));">Особливості</div>
-              <div class="navigation-item" onclick="new Scroll(document.body).toElement(document.getElementById('prices'));">Ціни</div>
-              <button onclick="new Scroll(document.body).toElement(document.getElementById('form')); isVissible = false;">Почати користування</button>
-            </nav>
-          </div>
-        </div>
-      </header>
-      <div class="content" id="main-section-content">
-        <div class="row">
-          <div class="column">
-            <div class="main-section-heading">Успішні контракти та швидкі процеси</div>
-          </div>
-          <div class="column">
-            <div class="main-section-description">Agreemeeting автоматизує ручні бізнес-процеси. Спростіть спосіб купівлі та продажу разом із платформою успішного виконання контракту.</div>
-          </div>
-          <div class="column">
-              <div class="button">Спробувати демоверсію</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="landing-section reverse decorations">
-      <svg xmlns="http://www.w3.org/2000/svg" class="curve-container__curve curve-three" viewBox="0 0 1440 68" enable-background="new 0 0 1440 68"><path d="m1622.3 1937.7c0 0-410.7 169.1-913.4 75.5-502.7-93.6-977.7 56.3-977.7 56.3v440h1891.1v-571.8" fill="#F4F5F7" transform="translate(0-1977)"></path></svg>
-    </section>
-    <section class="landing-section">
-      <div class="content demonstration-img">
-        <div class="row">
-          <div class="column">
-            <img src="/img/features-dashboard.png" alt="Demonstration">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="landing-section poster" id="poster-1">
-      <div class="content">
-        <div class="row">
-          <div class="block">
-            <svg>
-              <use xlink:href="/images/sprite.svg#collaboration"></use>
-            </svg>
-          </div>
-          <div class="block">
-            <div class="column">
-              <div class="main-section-heading">Неймовірно простий спосіб управління контрактами на підприємстві</div>
-            </div>
-            <div class="column">
-              <div class="main-section-description">Завдяки Agreemeeting всі ваші контракти знаходяться на одній платформі, тому кожен може створювати, чергувати, підписувати та керувати разом з колегами і сторонніми особами.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="landing-section poster" id="poster-2">
-      <div class="content">
-        <div class="row">
-          <div class="block">
-            <div class="column">
-              <div class="main-section-heading">Феноменальні можливості для вашого бізнесу</div>
-            </div>
-            <div class="column">
-              <div class="main-section-description">Безпечна співпраця, електронний підпис та інше - усе це на одній платформі. Крім того, інтегруйте ваші улюблені інструменти, за допомогою API Agreemeeting.</div>
-            </div>
-          </div>
-          <div class="block">
-            <svg>
-              <use xlink:href="/images/sprite.svg#integration"></use>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="landing-section poster" id="poster-3">
-      <div class="content">
-        <div class="row">
-          <div class="block">
-            <svg>
-              <use xlink:href="/images/sprite.svg#contract"></use>
-            </svg>
-          </div>
-          <div class="block">
-            <div class="column">
-              <div class="main-section-heading">Підписуйте отримані договори безкоштовно та без обмежень</div>
-            </div>
-            <div class="column">
-              <div class="main-section-description">Завдяки Agreemeeting всі ваші контракти знаходяться на одній платформі, тому кожен може створювати, чергувати, підписувати та керувати разом з колегами і сторонніми особами.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="landing-section" id="features">
-      <div class="content">
-        <div class="row">
-          <div class="features-title">Швидкі та ефективні бізнес-процеси</div>
-          <div class="features">
-            <div class="features-item">
-              <svg>
-                <use xlink:href="/images/sprite.svg#sales"></use>
-              </svg>
-              <div class="features-item-title"><span>Збільшення доходів</span></div>
-              <div class="features-item-desc">Погоджуйте більше угод, швидше, використовуючи попередньо схвалені контракти, щоб позбавитись юридичних затримок. Agreemeeting дозволяє співпрацювати безпосередньо з контрактом.</div>
-            </div>
-            <div class="features-item">
-              <svg>
-                <use xlink:href="/images/sprite.svg#legal"></use>
-              </svg>
-              <div class="features-item-title"><span>Досягнення бездоганної, ефективної відповідності</span></div>
-              <div class="features-item-desc">Отримайте відмінну відповідність, гарантуючи дотримання всіх процесів в життєвому циклі контракту. Agreemeeting автоматизує процеси для всіх контрактів в одному місці.</div>
-            </div>
-            <div class="features-item">
-              <svg>
-                <use xlink:href="/images/sprite.svg#procurement"></use>
-              </svg>
-              <div class="features-item-title"><span>Масштабування закупівель</span></div>
-              <div class="features-item-desc">Оптимізовуйте витрати з можливістю дострокового аналізу. Agreemeeting дає змогу побачити статус та термін поновлення всіх контрактів та прискорити цикл покупки.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="landing-section" id="prices">
-      <div class="content">
-        <div class="row">
-          <div class="features-title">Пакети послуг</div>
-          <div class="prices">
-            <div class="prices-item-wrapper">
-              <div class="prices-item">
-                <div class="prices-header">
-                  <div class="prices-title prices-header-item">Початковий</div>
-                  <div class="prices-value prices-header-item">Безкоштовно</div>
-                  <div class="prices-header-item prices-unit">за користувача в місяць</div>
-                </div>
-                <div class="prices-list">
-                  <div class="prices-list-item">Онлайн редагування документів</div>
-                  <div class="prices-list-item">Чат та відео-чат</div>
-                  <div class="prices-list-item">Сповіщення про граничні терміни</div>
-                  <div class="prices-list-item">Електронний підпис</div>
-                  <div class="prices-list-item">Аудиторський слід</div>
-                  <div class="prices-list-item">Контроль версій</div>
-                  <div class="prices-list-item">Налаштування прав доступу</div>
-                  <div class="prices-list-item unactive">Шаблони документів</div>
-                  <div class="prices-list-item unactive">Експорт даних</div>
-                  <div class="prices-list-item unactive">Масова розсилка</div>
-                  <div class="prices-list-item unactive">Затвердження робочих процесів</div>
-                  <div class="prices-list-item unactive">Аналітична панель</div>
-                  <div class="prices-list-item unactive">Користувальницька політика</br>ідентифікації</div>
-                  <div class="prices-list-item unactive">Інтеграція з Google Drive</br> та Dropbox</div>
-                  <div class="prices-list-item unactive">API</div>
-                  <div class="prices-list-item unactive">Керування дочірніми підприємствами</div>
-                  <div class="prices-list-item unactive">Локалізація даних</div>
-                  <div class="prices-list-item unactive">Користувальницький брендінг</div>
-                  <div class="prices-list-item unactive">Відео-підпис</div>
-                </div>
-                <div class="prices-includes">
-                  <div class="prices-list-item prices-includes-title">Входить до пакету:</div>
-                  <div class="prices-list-item">5 договорів</div>
-                  <div class="prices-list-item">1 ГБ вільного місця</div>
-                </div>
-              </div>
-            </div>
-            <div class="prices-item-wrapper">
-              <div class="prices-item">
-                <div class="prices-header">
-                  <div class="prices-title prices-header-item">Професійний</div>
-                  <div class="prices-value prices-header-item">500 грн</div>
-                  <div class="prices-header-item prices-unit">за користувача в місяць</div>
-                </div>
-                <div class="prices-list">
-                  <div class="prices-list-item">Онлайн редагування документів</div>
-                  <div class="prices-list-item">Чат та відео-чат</div>
-                  <div class="prices-list-item">Сповіщення про граничні терміни</div>
-                  <div class="prices-list-item">Електронний підпис</div>
-                  <div class="prices-list-item">Аудиторський слід</div>
-                  <div class="prices-list-item">Контроль версій</div>
-                  <div class="prices-list-item">Налаштування прав доступу</div>
-                  <div class="prices-list-item">Шаблони документів</div>
-                  <div class="prices-list-item">Експорт даних</div>
-                  <div class="prices-list-item">Масова розсилка</div>
-                  <div class="prices-list-item">Затвердження робочих процесів</div>
-                  <div class="prices-list-item">Аналітична панель</div>
-                  <div class="prices-list-item">Користувальницька політика</br>ідентифікації</div>
-                  <div class="prices-list-item unactive">Інтеграція з Google Drive</br> та Dropbox</div>
-                  <div class="prices-list-item unactive">API</div>
-                  <div class="prices-list-item unactive">Керування дочірніми підприємствами</div>
-                  <div class="prices-list-item unactive">Локалізація даних</div>
-                  <div class="prices-list-item unactive">Користувальницький брендінг</div>
-                  <div class="prices-list-item unactive">Відео-підпис</div>
-                </div>
-                <div class="prices-includes">
-                  <div class="prices-list-item prices-includes-title">Входить до пакету:</div>
-                  <div class="prices-list-item">500 договорів</div>
-                  <div class="prices-list-item">5 ГБ вільного місця</div>
-                </div>
-              </div>
-            </div>
-            <div class="prices-item-wrapper">
-              <div class="prices-item">
-                <div class="prices-header">
-                  <div class="prices-title prices-header-item">Підприємницький</div>
-                  <div class="prices-value prices-header-item">Індивідуально</div>
-                  <div class="prices-header-item prices-unit">за користувача в місяць</div>
-                </div>
-                <div class="prices-list">
-                  <div class="prices-list-item">Онлайн редагування документів</div>
-                  <div class="prices-list-item">Чат та відео-чат</div>
-                  <div class="prices-list-item">Сповіщення про граничні терміни</div>
-                  <div class="prices-list-item">Електронний підпис</div>
-                  <div class="prices-list-item">Аудиторський слід</div>
-                  <div class="prices-list-item">Контроль версій</div>
-                  <div class="prices-list-item">Налаштування прав доступу</div>
-                  <div class="prices-list-item">Шаблони документів</div>
-                  <div class="prices-list-item">Експорт даних</div>
-                  <div class="prices-list-item">Масова розсилка</div>
-                  <div class="prices-list-item">Затвердження робочих процесів</div>
-                  <div class="prices-list-item">Аналітична панель</div>
-                  <div class="prices-list-item">Користувальницька політика</br>ідентифікації</div>
-                  <div class="prices-list-item">Інтеграція з Google Drive</br> та Dropbox</div>
-                  <div class="prices-list-item">API</div>
-                  <div class="prices-list-item">Керування дочірніми підприємствами</div>
-                  <div class="prices-list-item">Локалізація даних</div>
-                  <div class="prices-list-item">Користувальницький брендінг</div>
-                  <div class="prices-list-item">Відео-підпис</div>
-                </div>
-                <div class="prices-includes">
-                  <div class="prices-list-item prices-includes-title">Входить до пакету:</div>
-                  <div class="prices-list-item">необмежена кількість договорів</div>
-                  <div class="prices-list-item">100+ ГБ вільного місця</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="landing-section" id="form">
-      <div class="content">
-        <div class="row">
-          <div class="form-wrapper">
-            <div class="form-container">
-              <div class="form-title">Отримай доступ до демо-версії</div>
-              <form class="form">
-                <div class="form-item">
-                  <label>Ім'я</label>
-                  <input required type="text" placeholder="Ваше ім'я..."/>
-                </div>
-                <div class="form-item">
-                  <label>Прізвище</label>
-                  <input required type="text" placeholder="Ваше прізвище..."/>
-                </div>
-                <div class="form-item">
-                  <label>Електронна пошта</label>
-                  <input required type="email" placeholder="Ваша електронна пошта..."/>
-                </div>
-                <div class="form-item">
-                  <label>Номер телефону</label>
-                  <input required type="tel" placeholder="Ваш номер телефону..."/>
-                </div>
-                <div class="form-item">
-                  <label>Посада</label>
-                  <input required type="text" placeholder="Ваша посада..."/>
-                </div>
-                <div class="form-item">
-                  <label>Назва компанії</label>
-                  <input required type="text" placeholder="Назва вашої компанії..."/>
-                </div>
-                <div class="form-item">
-                  <label>Кількість працівників</label>
-                  <select>
-                    <optgroup label="К-сть працівників">
-                      <option selected value="1-50">1-50</option>
-                      <option value="51-499">51-499</option>
-                      <option value="500-5000">500-5000</option>
-                      <option value="5001+">5001+</option>
-                    </optgroup>
-                  </select>
-                </div>
-                <div class="form-item">
-                  <input type="submit" value="Надіслати запит"/>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="landing-section landing-footer-image"></section>
-    <footer class="landing-footer">
-      <div class="landing-footer-block">
-        <div class="landing-footer-section-wrapper">
-          <div class="landing-footer-section">
-            <div class="landing-footer-section-title">Контакти</div>
-            <div class="landing-footer-section-contacts">79019, вул. Весняна 4,</br>Бізнес-інкубатор</br>“Startup Depot”,</br>Львів, Україна</div>
-            <div class="landing-footer-section-contacts">Тел: 0800 300 331</br>Email: <a href="mailto:info@itcluster.lviv.ua">info@itcluster.lviv.ua</a></div>
-          </div>
-          <div class="landing-footer-section">
-            <div class="landing-footer-section-title">Новини</div>
-            <div class="landing-footer-news-text">Підпишіться на нашу розсилку і слідкуйте за оновленнями</div>
-            <div class="landing-footer-news-subscription">
-              <input type="text" placeholder="Електронна пошта"/>
-              <button class="fade-animation">Підписатись</button>
-            </div>
-            <div class="landing-footer-news-social">
-              <a href="#">
-                <svg>
-                  <use xlink:href="/images/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-              <a href="#">
-                <svg>
-                  <use xlink:href="/images/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-              <a href="#">
-                <svg>
-                  <use xlink:href="/images/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-              <a href="#">
-                <svg>
-                  <use xlink:href="/images/sprite.svg#google"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="landing-footer-info">
-          <div class="landing-footer-links">
-            <a href="/about.html" class="landing-footer-links-item">Про нас</a>
-            <a href="/legal.html" class="landing-footer-links-item">Юридична інформація</a>
-          </div>
-          <span class="landing-footer-copyright">Copyright &copy; All Rights Reserved &mdash; Agreemeeting</span>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script>
-    var isVissible = false;
+<a name="top"></a>
+<header><nav><menu>
 
-    document.getElementById('menu-button').onclick = function() {
-      var menu = document.getElementById('menu');
+<p><a href="#how-it-works">Як це працює</a> <a href="#features">Переваги</a> <a href="#price">Ціни</a> <a href="#demo">Спробувати</a></p>
+</menu></nav><header>
 
-      if (isVissible) {
-        menu.style = "display: none;"
-        isVissible = false;
-      } else {
-        menu.style = "display: flex;"
-        isVissible = true;
-      }
-    };
+<h1 id="agreemeeting-">Agreemeeting <a name="agreemeeting"></a></h1>
+<p>платформа для досягнення згоди між сторонами</p>
+<p><a href="#demo">Спробувати демо-версію</a></p>
+<h2 id="як-це-працює-">Як це працює <a name="how-it-works"></a></h2>
+<p>Сторони завантажують документи, щодо яких вони хочуть досягти згоди.</p>
+<columns>
+<column>
 
-    window.onresize = function () {
-      console.log(window.innerWidth);
-      if (window.innerWidth > 750) {
-        isVissible = false;
-        document.getElementById('menu').style = 'display: flex;';
-      }
-    };
-  </script>
+<p>Сторони відмічають зеленим пункти, щодо яких вони дійшли згоди. Будь які зміни, в узгодженому тексті, знімають позначку про згоду.</p>
+</column>
+<column>
+
+<p>Сторони відмічають червоним пункти, щодо яких вони не дійшли згоди, та залишають коментар з поясненням, чому.</p>
+</column>
+</columns>
+
+<p>Документи можна підписати коли весь текст узгоджений. Історія змін документа та коментарі до тексту документа зберігаються.</p>
+<h2 id="переваги-">Переваги <a name="features"></a></h2>
+<ul>
+<li>Поетапне узгодження довгих документів.</li>
+<li>Прискороне узгодження типових документів.</li>
+<li>Документи та нотатки не губляться та не забуваються.</li>
+<li>Аргументування своєї незгоди текстовими коментарями чи відеороликами.</li>
+<li>Стартові шаблони, перевірені юристами.</li>
+<li>Свої шаблони.</li>
+<li>Помічник на основі штучного інтелекту, для виявлення типових слабких місць у документах.</li>
+</ul>
+<h2 id="пакети-">Пакети <a name="price"></a></h2>
+<columns>
+<column>
+
+<p><strong>Початковий</strong></p>
+<p><em>Безкоштовно</em></p>
+<p>за користувача в місяць</p>
+<hr>
+
+<ul>
+<li>Онлайн редагування документів</li>
+<li>Чат та відео-чат</li>
+<li>Сповіщення про граничні терміни</li>
+<li>Електронний підпис</li>
+<li>Аудиторський слід</li>
+<li>Контроль версій</li>
+<li>Налаштування прав доступу</li>
+<li><span style="color: gray;">Шаблони документів</span></li>
+<li><span style="color: gray;">Експорт даних</span></li>
+<li><span style="color: gray;">Масова розсилка</span></li>
+<li><span style="color: gray;">Затвердження робочих процесів</span></li>
+<li><span style="color: gray;">Аналітична панель</span></li>
+<li><span style="color: gray;">Користувальницька політика</span></li>
+<li><span style="color: gray;">ідентифікації</span></li>
+<li><span style="color: gray;">Інтеграція з Google Drive та Dropbox</span></li>
+<li><span style="color: gray;">API</span></li>
+<li><span style="color: gray;">Керування дочірніми підприємствами</span></li>
+<li><span style="color: gray;">Локалізація даних</span></li>
+<li><span style="color: gray;">Користувальницький брендінг</span></li>
+<li><span style="color: gray;">Відео-підпис</span></li>
+</ul>
+<hr>
+
+<p>Входить до пакету:</p>
+<ul>
+<li>50 договорів</li>
+<li>1 ГБ вільного місця</li>
+</ul>
+</column>
+<column>
+
+<p><strong>Професійний</strong></p>
+<p>500 грв</p>
+<p>за користувача в місяць</p>
+<hr>
+
+<ul>
+<li>Онлайн редагування документів</li>
+<li>Чат та відео-чат</li>
+<li>Сповіщення про граничні терміни</li>
+<li>Електронний підпис</li>
+<li>Аудиторський слід</li>
+<li>Контроль версій</li>
+<li>Налаштування прав доступу</li>
+<li>Шаблони документів</li>
+<li>Експорт даних</li>
+<li>Масова розсилка</li>
+<li>Затвердження робочих процесів</li>
+<li>Аналітична панель</li>
+<li>Користувальницька політика</li>
+<li>ідентифікації</li>
+<li><span style="color: gray;">Інтеграція з Google Drive та Dropbox</span></li>
+<li><span style="color: gray;">API</span></li>
+<li><span style="color: gray;">Керування дочірніми підприємствами</span></li>
+<li><span style="color: gray;">Локалізація даних</span></li>
+<li><span style="color: gray;">Користувальницький брендінг</span></li>
+<li><span style="color: gray;">Відео-підпис</span></li>
+</ul>
+<hr>
+
+<p>Входить до пакету:</p>
+<ul>
+<li>5000 договорів</li>
+<li>5 ГБ вільного місця</li>
+</ul>
+</column>
+<column>
+
+<p><strong>Підприємницький</strong></p>
+<p>індивідуальні знижки</p>
+<p>залежить від обсягу</p>
+<hr>
+
+<ul>
+<li>Онлайн редагування документів</li>
+<li>Чат та відео-чат</li>
+<li>Сповіщення про граничні терміни</li>
+<li>Електронний підпис</li>
+<li>Аудиторський слід</li>
+<li>Контроль версій</li>
+<li>Налаштування прав доступу</li>
+<li>Шаблони документів</li>
+<li>Експорт даних</li>
+<li>Масова розсилка</li>
+<li>Затвердження робочих процесів</li>
+<li>Аналітична панель</li>
+<li>Користувальницька політика</li>
+<li>ідентифікації</li>
+<li>Інтеграція з Google Drive та Dropbox</li>
+<li>API</li>
+<li>Керування дочірніми підприємствами</li>
+<li>Локалізація даних</li>
+<li>Користувальницький брендінг</li>
+<li>Відео-підпис</li>
+</ul>
+<hr>
+
+<p>Входить до пакету:</p>
+<ul>
+<li>необмежена кількість договорів</li>
+<li>100+ ГБ вільного місця</li>
+<li>архівування документів</li>
+</ul>
+</column>
+</columns>
+
+<h2 id="демо-версія-">Демо-версія <a name="demo"></a></h2>
+<a href="#top">[top]</a>
 </body>
 </html>
